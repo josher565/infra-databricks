@@ -26,11 +26,11 @@ resource "azurerm_resource_group" "this" {
 }
 
 resource "azurerm_databricks_workspace" "ws" {
-  name                        = "${var.prefix}-workspace"
+  name                        = "${var.prefix}workspace"
   resource_group_name         = azurerm_resource_group.this.name
   location                    = azurerm_resource_group.this.location
   sku                         = "premium"
-  managed_resource_group_name = "${var.prefix}-workspace-rg"
+  managed_resource_group_name = "${var.prefix}workspace-rg"
   tags                        = var.tags
 }
 

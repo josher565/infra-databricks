@@ -1,6 +1,6 @@
 rg       = "dbx-sbox"
 location = "canadaeast"
 tags = {
-    Environment = "Sandbox"    
+  Environment = "Sandbox"
 }
 prefix = "dbx-sbox-"
